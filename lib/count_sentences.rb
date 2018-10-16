@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    split_string = []
-    split_string << self.split(/[.!?]/)
-    binding.pry
+    self.split(/[,.!]\s[A-Z]/)
   end
 end
